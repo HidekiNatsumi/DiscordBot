@@ -27,7 +27,7 @@ public class Commands extends ListenerAdapter {
             int count = 1;
             textChannel.sendMessage("Potato Sales:").queue();
             while (count <= 4) {
-                textChannel.sendMessage(count + " potate").queue();
+                textChannel.sendMessage(count + " potato").queue();
                 count++;
             }
         }
