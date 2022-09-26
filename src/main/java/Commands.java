@@ -16,7 +16,7 @@ public class Commands extends ListenerAdapter {
         Guild guild = event.getGuild();
 
         int MemberCount = guild.getMemberCount();
-        if (id.equalsIgnoreCase("949676546468225074")) {    //to not respond to himself
+        if (id.equalsIgnoreCase("949676546468225074")) {    //to not respond to itself
             return;
         }
         for (String s : command) {
