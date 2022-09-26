@@ -32,7 +32,7 @@ public class Commands extends ListenerAdapter {
             }
         }
         if (command[0].equalsIgnoreCase(prefix + "commands")) {
-            textChannel.sendMessage("!spam -> to spam some random words\n!lol -> pathetic burns\n!shutup + (mentioning a person) ->shutup @personMentioned").queue();
+            textChannel.sendMessage("!spam -> to spam some random words\n!mot -> best of wishes\n!shutup + (mentioning a person) ->shutup @personMentioned").queue();
         }
         if (command[0].equalsIgnoreCase(prefix + "mot")) {
             textChannel.sendMessage("<@" + id + ">" + " best of wishes!").queue();//motivational
