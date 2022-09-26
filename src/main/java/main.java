@@ -10,7 +10,7 @@ public class main {
     public static void main(String[] args) throws LoginException {
 
         JDABuilder jda = JDABuilder.createDefault(token, GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MEMBERS);
-        jda.setActivity(Activity.playing("League of Legends"));// sets bot activity
+        jda.setActivity(Activity.playing("Visual Studio Code"));// sets bot activity
         jda.addEventListeners(new Commands());
         jda.build();
     }
