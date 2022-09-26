@@ -25,17 +25,17 @@ public class Commands extends ListenerAdapter {
 
         if (command[0].equalsIgnoreCase(prefix + "spam")) { // checks the prefix and the key to send the messages
             int count = 1;
-            textChannel.sendMessage("Shitje patatesh:").queue();
+            textChannel.sendMessage("Potato Sales:").queue();
             while (count <= 4) {
-                textChannel.sendMessage(count + " patate").queue();
+                textChannel.sendMessage(count + " potate").queue();
                 count++;
             }
         }
         if (command[0].equalsIgnoreCase(prefix + "commands")) {
             textChannel.sendMessage("!spam -> to spam some random words\n!lol -> pathetic burns\n!shutup + (mentioning a person) ->shutup @personMentioned").queue();
         }
-        if (command[0].equalsIgnoreCase(prefix + "lol")) {
-            textChannel.sendMessage("<@" + id + ">" + " go lose some weight u fatso").queue();//troll
+        if (command[0].equalsIgnoreCase(prefix + "mot")) {
+            textChannel.sendMessage("<@" + id + ">" + " best of wishes!").queue();//motivational
         }
         if (command[0].equalsIgnoreCase(prefix + "shutup")) {
             String convert = command[1];
