@@ -9,6 +9,7 @@ Functionalities
 <li>Say bad things about you</li>
 <li>shutup command for anymember you want</li>
 </ul>
+
   Commands
   -
      
