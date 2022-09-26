@@ -10,8 +10,8 @@ Functionalities
   Commands
   -
       
-          !commands - Will display all bot commands 
-          !spam - will text potatoe 4 times
-          !lol - will encourage you
-          !shutup - will say shutup to another discord member you mention
+          <strong>!commands</strong> - Will display all bot commands 
+          <strong>!spam</strong> - will text potatoe 4 times
+          <strong>!lol</strong> - will encourage you
+          <strong>!shutup</strong> - will say shutup to another discord member you mention
 ---
