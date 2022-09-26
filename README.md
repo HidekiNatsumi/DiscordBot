@@ -18,7 +18,7 @@ Functionalities
           !spam - will text potatoe 4 times
           !lol - will encourage you
           !shutup - will say shutup to other discord members
-          Bot will have Playing Visual Studio Code activity
+          Bot will have (Playing Visual Studio Code) activity when online
           
    
    Snippets
