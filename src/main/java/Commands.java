@@ -1,0 +1,60 @@
+import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
+
+
+public class Commands extends ListenerAdapter {
+    public String prefix = "!";
+    boolean exists = false;
+
+    public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
+        TextChannel textChannel = event.getGuild().getTextChannelsByName("bot-test", true).get(0);//sends the messages on this particular channel
+        Message message = event.getMessage();
+        String[] command = message.getContentRaw().split(" ");
+        User author = event.getAuthor();
+        String id = author.getId();
+        Guild guild = event.getGuild();
+
+        int MemberCount = guild.getMemberCount();
+        if (id.equalsIgnoreCase("949676546468225074")) {    //to not respond to himself
+            return;
+        }
+        for (String s : command) {
+            System.out.println(s);//checks the items in the array
+        }
+
+        if (command[0].equalsIgnoreCase(prefix + "spam")) { // checks the prefix and the key to send the messages
+            int count = 1;
+            textChannel.sendMessage("Shitje patatesh:").queue();
+            while (count <= 4) {
+                textChannel.sendMessage(count + " patate").queue();
+                count++;
+            }
+        }
+        if (command[0].equalsIgnoreCase(prefix + "commands")) {
+            textChannel.sendMessage("!spam -> to spam some random words\n!lol -> pathetic burns\n!shutup + (mentioning a person) ->shutup @personMentioned").queue();
+        }
+        if (command[0].equalsIgnoreCase(prefix + "lol")) {
+            textChannel.sendMessage("<@" + id + ">" + " go lose some weight u fatso").queue();//troll
+        }
+        if (command[0].equalsIgnoreCase(prefix + "shutup")) {
+            String convert = command[1];
+            convert = convert.replace("<", "");
+            convert = convert.replace(">", "");
+            convert = convert.replace("@", "");
+            // Task<List<Member>> members= event.getGuild().retrieveMembersByIds(convert);
+            for (int i = 0; i < guild.getMemberCount(); i++) {
+                exists = (event.getGuild().getMembers().contains(convert));
+                // System.out.println(temp);
+                if (!exists) {
+                    exists = true;
+                    textChannel.sendMessage("shut up " + "<@" + convert + ">").queue();
+                    break;
+                }
+            }
+            if (!exists) {
+                textChannel.sendMessage("User <@" + convert + "> doesn't exists").queue();
+            }
+        }
+    }
+}
