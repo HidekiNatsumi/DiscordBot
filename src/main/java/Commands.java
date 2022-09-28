@@ -25,9 +25,10 @@ public class Commands extends ListenerAdapter {
 
         if (command[0].equalsIgnoreCase(prefix + "spam")) { // checks the prefix and the key to send the messages
             int count = 1;
-            textChannel.sendMessage("Potato Sales:").queue();
-            while (count <= 4) {
-                textChannel.sendMessage(count + " " + command[1]).queue();
+         
+           int temp = Integer.parseInt(command[2]);
+            while (count <= temp) {
+                textChannel.sendMessage(command[1]).queue();
                 count++;
             }
         }
