@@ -1,4 +1,5 @@
 import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.events.ShutdownEvent;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -6,6 +7,8 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 public class Commands extends ListenerAdapter {
     public String prefix = "!";
     boolean exists = false;
+    int MemberCount;
+    boolean shutdown=false;
 
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         TextChannel textChannel = event.getGuild().getTextChannelsByName("bot-test", true).get(0);//sends the messages on this particular channel
