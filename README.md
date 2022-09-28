@@ -1,5 +1,5 @@
 # Discord Bot 
-Discord Bot using Discord Rest API (<a href="https://github.com/DV8FromTheWorld/JDA">JDA 5.0.0 alpha 20<a>)
+Discord Bot using Discord Rest API (<a href="https://github.com/DV8FromTheWorld/JDA">JDA 4.3.0_277 alpha 20<a>)
 
 Change DiscordBotToken to use this bot
 
