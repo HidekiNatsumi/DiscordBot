@@ -16,7 +16,7 @@ Functionalities
   -
      
           !commands - Will display all bot commands 
-          !spam - will text potatoe 4 times
+          !spam +(text you want to spam)- will text that word 4 times
           !lol - will encourage you
           !shutup - will say shutup to other discord members
           Bot will have (Playing Visual Studio Code) activity when online
