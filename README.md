@@ -16,7 +16,7 @@ Functionalities
   -
      
           !commands - Will display all bot commands 
-          !spam +(text you want to spam)- will text that word 4 times
+          !spam +(text you want to spam)+ (ammount of times you want to send this message)
           !lol - will encourage you
           !shutup - will say shutup to other discord members
           Bot will have (Playing Visual Studio Code) activity when online
